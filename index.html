@@ -15,21 +15,22 @@
       color: #333;
     }
 
+    /* Encabezado más compacto */
     header {
       background: linear-gradient(135deg, #7b1113, #b71c1c, #d84315);
       color: #fff;
       text-align: center;
-      padding: 4rem 1rem;
+      padding: 2.5rem 1rem;
     }
 
     header h1 {
-      font-size: 3rem;
+      font-size: 2.2rem;
       font-weight: bold;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #ffdd99;
       font-style: italic;
     }
@@ -38,7 +39,7 @@
       color: #7b1113;
       font-weight: bold;
       text-align: center;
-      margin-top: 3rem;
+      margin-top: 2rem;
       margin-bottom: 1rem;
     }
 
@@ -52,28 +53,25 @@
       border-radius: 5px;
     }
 
-    /* Tarjetas tipo menú virtual */
+    /* Estilo de tarjetas tipo menú */
     .card {
-      background: linear-gradient(135deg, #fff8e7, #ffffff); /* degradado cálido */
-      border: 2px solid #e2c792;           /* borde dorado suave */
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      border-radius: 15px;
+      background: #fff3e0;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
     }
 
-    .card:hover { 
-      transform: translateY(-8px); 
-      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-    }
+    .card:hover { transform: translateY(-6px); }
 
     .card-title {
-      font-weight: bold;
       color: #7b1113;
+      font-weight: bold;
     }
 
     .btn-outline-danger {
-      border-radius: 25px;
-      padding: 8px 20px;
+      border-radius: 10px;
+      font-weight: 500;
     }
 
     .btn-whatsapp {
@@ -84,10 +82,7 @@
       width: 100%;
     }
 
-    .btn-whatsapp:hover { 
-      background: #1ebc57; 
-      color: #fff; 
-    }
+    .btn-whatsapp:hover { background: #1ebc57; color: #fff; }
 
     footer {
       background: #2b2b2b;
@@ -97,10 +92,7 @@
       margin-top: 60px;
     }
 
-    footer span { 
-      color: #c29d59; 
-      font-weight: bold; 
-    }
+    footer span { color: #c29d59; font-weight: bold; }
   </style>
 </head>
 <body>
@@ -119,18 +111,18 @@
 
     <!-- Fila centrada -->
     <div class="row g-4 justify-content-center">
-      <!-- Columna centrada -->
+      <!-- Columna centrada y responsiva -->
       <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto">
         <div class="card text-center h-100">
           <div class="card-body">
             <h5 class="card-title">🥩 Chancho al Palo</h5>
             <p class="card-text text-muted">Plato estrella de la casa, jugoso y lleno de tradición.</p>
-            <a href="https://www.canva.com/design/DAGtwJfO33g/GbtkDA6O2vQmdFTshNd9NQ/view?utm_content=DAGtwJfO33g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1b60966d78" 
+            <a href="https://www.canva.com/design/DAGtwJfO33g/GbtkDA6O2vQmdFTshNd9NQ/view" 
                class="btn btn-outline-danger">Ver detalles</a>
           </div>
         </div>
       </div>
-      <!-- Cuando agregues más platos, duplícalos como nuevas columnas -->
+      <!-- Cuando agregues más platos, duplícalos como nuevas columnas dentro de esta misma fila -->
     </div>
 
     <!-- Contacto -->
